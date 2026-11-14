@@ -1,0 +1,141 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan dasar halaman */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #3d3440;
+    background: #fff9fc;
+    line-height: 1.6;
+}
+
+/* Bagian header */
+header {
+    background: linear-gradient(135deg, #d982ad, #a85d91);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 16px;
+    background: #f7e5ef;
+}
+
+header h1 {
+    margin-bottom: 6px;
+    font-size: 2rem;
+}
+
+/* Navigasi menggunakan Flexbox */
+nav {
+    background: #493746;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #f4b9d5;
+}
+
+/* Konten utama */
+main {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #98527f;
+    border-bottom: 3px solid #d982ad;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+/* Kartu keahlian menggunakan CSS Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #efd5e3;
+    box-shadow: 0 3px 10px rgba(90, 45, 70, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card h3 {
+    color: #98527f;
+    margin-bottom: 8px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(90, 45, 70, 0.13);
+}
+
+#kontak ul {
+    padding-left: 22px;
+}
+
+#kontak a {
+    color: #98527f;
+}
+
+.catatan {
+    margin-top: 10px;
+    color: #776b75;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: #493746;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Penyesuaian untuk layar kecil */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+}
